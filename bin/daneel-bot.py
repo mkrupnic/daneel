@@ -19,7 +19,7 @@ def esper():
     server = girc.Server("irc.esper.net")
     channels = {
         "#stevens": girc.Channel("#stevens"),
-        #"#daneeltest": girc.Channel("#daneeltest"),
+        "#daneelplayground": girc.Channel("#daneelplayground"),#test playground channel
     }
     for channel in channels.values():
         channel.add_handler(summarize)
